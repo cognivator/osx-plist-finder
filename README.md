@@ -8,7 +8,13 @@ Highlight an OS X application in Finder - typically in the /Applications folder 
 WIP
 
 ## Operation
-WIP
+The workflow follows this sequence,
+ 1. check if the selected item in Finder is an application package (extension is .app)
+ 2. locate Contents/Info.plist in the application package
+ 3. extract the `CFBundleIdentifier` property from Info.plist. This should be the name of the preferences plist file.
+ 4. reveal the preferences plist file in User Preferences (~/Library/Preferences) in a Finder window, if the plist file exists
+
+The workflow comprises native Automator Finder actions, Applescript and Javascript actions, and system variables. Generally, folder navigation is handled by the Finder actions and system variables, verification of folder contents is handled by Applescript actions, and plist operations are handled by Javascript action. 
 
 ## Known Limitations
  * Currently the only preferences location explored is User Preferences (~/Library/Preferences).
