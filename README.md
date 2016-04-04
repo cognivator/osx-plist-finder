@@ -7,14 +7,14 @@ Highlight an OS X application in Finder - typically in the /Applications or /App
 ## Installation
 Automator workflows are stored as application packages - albeit with a `.workflow` extension - in ~/Library/Services.
 
-#### Obtain the `.workflow` package
+#### 1. Obtain the `.workflow` package
 ##### via git clone...
 `git clone https://github.com/cognivator/osx-plist-finder.git`
 
 ##### via raw download...
 WIP
 
-#### Install the workflow
+#### 2. Install the workflow
 ##### via Automator Import...
 WIP
 
