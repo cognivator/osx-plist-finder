@@ -39,6 +39,7 @@ The workflow is defined as an Automator Service, activated for Files or Folders 
 The workflow comprises native Automator Finder actions, Applescript and Javascript actions, and system variables. Generally, folder navigation is handled by the Finder actions and system variables, verification of folder contents is handled by Applescript actions, and plist operations are handled by Javascript action.
 
 ## Known Limitations
+ * test with OS X Yosemite 10.10.5
  * only the user preferences location is checked for the plist file (~/Library/Preferences)
  * if a preferences plist file cannot be found, there is no messaging and no Finder window; the failure is silent.
 
